@@ -10,14 +10,14 @@
     </div>
 
     <div>
-      Cost: {{ price | fromWei(9, "XRT") }} | Balance:
+      Cost: {{ price }} | Balance:
       <a
         :href="`https://etherscan.io/token/${token}?a=${account}`"
         target="blank"
-        >{{ balance | fromWei(9, "XRT") }}</a
+        >{{ balance }}</a
       >
       <span v-if="price > 0"
-        >| Approved: {{ approveTrade | fromWei(9, "XRT") }}</span
+        >| Approved: {{ approveTrade }}</span
       >
     </div>
 
